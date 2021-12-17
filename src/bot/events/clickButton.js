@@ -162,9 +162,10 @@ module.exports = async function(client, button) {
                         .addComponent(btn5)
                     channel.send(`<@${button.clicker.user.id}> <:hydroxdot:888039412632543263> <:hydroxarrow:888018627880714241> <@&${adminRole}> <:hydroxarrow_left:888351028787961866>`, {
                         embed: {
-                            description: `Please wait for an Admin to respond!!\n\n__**Please Tell Us What You Need Help On!**__\n\n**<:hydroxreply:887741912180727849>Ticket Category: Other**\n
-                    Press **🔒** to close this ticket`,
-                            color: 0x2F3136
+            title: `Welcome ${button.clicker.user.username}`
+description: ` **A staff will be responding soon!**\n <a:arrow_1:839014694710804490> Enter your reason to create ticket below \n > <a:arrow_1:839014694710804490> If you want to enroll in a course type \`-courses\` and select which one. \n > <a:arrow_1:839014694710804490> Would you like to pay in DMC or .. ? \n > <a:arrow_1:839014694710804490> Make sure to run \`pls profile\` and show your current stats!
+                  \n  Press **🔒** to close this ticket`,
+                            color : 5ec3f2
                         },
                         component: row
                         }).then(msg => {
@@ -179,7 +180,7 @@ module.exports = async function(client, button) {
                     button.channel.send({
                         embed: {
                             color: 0xFF0000,
-                            title: `**❌ | Error**`,
+                            title: `**but . .**`,
                             description: `You already have a ticket open before`
                         }
                     }).then(async function(m) {
@@ -325,7 +326,7 @@ module.exports = async function(client, button) {
 						});
 					}
 					catch(e) {
-						return button.channel.send('An error occurred, please try again!');
+						return button.channel.send('Oh boi..something fucked up);
 					}
 
 					const embed = new Discord.MessageEmbed()
@@ -336,7 +337,7 @@ module.exports = async function(client, button) {
             } else if (button.id == "reopenTicket") {
                 button.channel.send({
                     embed: {
-                        description: `\`\`\`I have cancled The Ticket Deletion!\nDone By ${button.clicker.user.tag}\`\`\``,
+                        description: `\`\`\`Alright, deletation cancelled!\nDone By ${button.clicker.user.tag}\`\`\``,
                         color: 0xFFE700
                     }
                 })
