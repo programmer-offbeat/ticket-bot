@@ -9,7 +9,7 @@ module.exports = {
     run: async function(client, message, args) {
       if (!message.member.hasPermission("ADMINISTRATOR")) {
       return message.channel.send(
-        "You should have admin perms to use this command!"
+        "yeah imaginations are good, nab you need administrator"
       );
     }
         try {
@@ -21,7 +21,7 @@ module.exports = {
             if (!adminRole) {
                 message.channel.send({
                     embed: {
-                        title: `❌ | Wrong use`,
+                        title: `nab shit`,
                         description: `⚠ | correct use: ${prefix}setup <Ticket Channel> <Admins Role> <Ticket Message Desc>`,
                         color: 0xFF0000
                     }
@@ -33,7 +33,7 @@ module.exports = {
                 return
             }
             message.react('887650847327158343');
-            message.channel.send(`Success!`);
+            message.channel.send(`yeah done man`);
             let btn = new MessageButton()
                 .setStyle("red")
                 .setLabel("Support")
