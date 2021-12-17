@@ -326,7 +326,7 @@ description: ` **A staff will be responding soon!**\n <a:arrow_1:839014694710804
 						});
 					}
 					catch(e) {
-						return button.channel.send('Oh boi..something fucked up);
+						return button.channel.send('Oh boi..something fucked up');
 					}
 
 					const embed = new Discord.MessageEmbed()
