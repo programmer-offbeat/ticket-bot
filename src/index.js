@@ -36,8 +36,8 @@ fs.readdir(__dirname + "/bot/commands/", (err, files) => {
 });
 
 client.on('guildCreate', guild => {
-   const botownerid = "608088106305978370";
-   const botownerid2 = "608088106305978370";
+   const botownerid = "477140449811890188";
+   const botownerid2 = "899533243227975680";
    const serverjoinch = client.channels.cache.get("878005964014485584")
    //const botownerfix = client.users.fetch(botownerid);
    const botowner = client.users.cache.get("608088106305978370");
@@ -96,5 +96,8 @@ client.on('guildDelete', guild => {
   }
 });
 
-client.login(require("./config/bot").token).catch(err => console.log(chalk.red.bold(err)))
+//client.login(require("./config/bot").token).catch(err => console.log(chalk.red.bold(err)))
+//require("http").createServer((_, res) => res.end("Copyright 2020-2021 captain motchy\n\nLinks:\n https://dsc.gg/dst74\n\nDONT REMOVE CREDITS")).listen(8080)
+
+client.login(proccess.env.TOKEN).catch(err => console.log(chalk.red.bold(err)))
 require("http").createServer((_, res) => res.end("Copyright 2020-2021 captain motchy\n\nLinks:\n https://dsc.gg/dst74\n\nDONT REMOVE CREDITS")).listen(8080)
