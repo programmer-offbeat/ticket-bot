@@ -14,8 +14,8 @@ module.exports = async function(client, button) {
                     button.channel.send({
                         embed: {
                             color: 0xFF0000,
-                            title: `**❌ | Error**`,
-                            description: `You already have a ticket open before`
+                            title: `**but**`,
+                            description: `You can't create multiple tickets together !`
                         }
                     }).then(async function(m) {
                         setTimeout(() => {
@@ -57,7 +57,7 @@ module.exports = async function(client, button) {
                         .setStyle("blurple")
                         .setEmoji("888350726877769728")
 
-.setLabel("")
+.setLabel("claim!")
                       .setID("otherTicketin");
                       let btn4 = new MessageButton()
                         .setStyle("red")
@@ -97,8 +97,8 @@ module.exports = async function(client, button) {
                     button.channel.send({
                         embed: {
                             color: 0xFF0000,
-                            title: `**❌ | Error**`,
-                            description: `You already have a ticket open before`
+                            title: `**but..**`,
+                            description: `You can't create multiple tickets at the same time`
                         }
                     }).then(async function(m) {
                         setTimeout(() => {
@@ -245,6 +245,7 @@ module.exports = async function(client, button) {
                         
                     channel.send(`<@${button.clicker.user.id}> <:hydroxdot:888039412632543263> <:hydroxarrow:888018627880714241> <@&${adminRole}> <:hydroxarrow_left:888351028787961866>`, {
                         embed: {
+		
                             description: `Please wait for an Admin to respond!!\n\n__**Please Tell Us What You Need Help On!**__\n\n**<:hydroxreply:887741912180727849>Ticket Category: Claim**\n
                     Press **🔒** to close this ticket`,
                             color: 0x2F3136
