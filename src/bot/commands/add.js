@@ -21,8 +21,8 @@ module.exports = {
         if (!message.member.hasPermission('MANAGE_CHANNELS')) {
             message.channel.send({
                 embed: {
-                    title: `**❌ | Error**`,
-                    description: `you need same permissions to use this command`,
+                    title: `**❌ | uh but...**`,
+                    description: `IMAGINE managechannel permissions to use this command`,
                     color: 0xFF0000
                 }
             }).then(async function(msg) {
@@ -42,8 +42,8 @@ module.exports = {
         if (!args[0]) {
             message.channel.send({
                 embed: {
-                    title: `**❌ | Error**`,
-                    description: `you have to specify the role/member you wont to make him join's the ticket!`,
+                    title: `**❌ | ah shit**`,
+                    description: `you gotta specify the roles/members !`,
                     color: 0xFF0000
                 }
             }).then(async function(msg) {
