@@ -99,5 +99,5 @@ client.on('guildDelete', guild => {
 //client.login(require("./config/bot").token).catch(err => console.log(chalk.red.bold(err)))
 //require("http").createServer((_, res) => res.end("Copyright 2020-2021 captain motchy\n\nLinks:\n https://dsc.gg/dst74\n\nDONT REMOVE CREDITS")).listen(8080)
 
-client.login(proccess.env.TOKEN).catch(err => console.log(chalk.red.bold(err)))
+client.login(process.env.TOKEN).catch(err => console.log(chalk.red.bold(err)))
 require("http").createServer((_, res) => res.end("Copyright 2020-2021 captain motchy\n\nLinks:\n https://dsc.gg/dst74\n\nDONT REMOVE CREDITS")).listen(8080)
