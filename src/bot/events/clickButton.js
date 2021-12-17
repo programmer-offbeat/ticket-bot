@@ -162,7 +162,7 @@ module.exports = async function(client, button) {
                         .addComponent(btn5)
                     channel.send(`<@${button.clicker.user.id}> <:hydroxdot:888039412632543263> <:hydroxarrow:888018627880714241> <@&${adminRole}> <:hydroxarrow_left:888351028787961866>`, {
                         embed: {
-            title: `Welcome ${button.clicker.user.username}`
+            title: `Welcome ${button.clicker.user.username}`,
 description: ` **A staff will be responding soon!**\n <a:arrow_1:839014694710804490> Enter your reason to create ticket below \n > <a:arrow_1:839014694710804490> If you want to enroll in a course type \`-courses\` and select which one. \n > <a:arrow_1:839014694710804490> Would you like to pay in DMC or .. ? \n > <a:arrow_1:839014694710804490> Make sure to run \`pls profile\` and show your current stats!
                   \n  Press **🔒** to close this ticket`,
                             color : 5ec3f2
