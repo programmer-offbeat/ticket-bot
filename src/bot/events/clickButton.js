@@ -1,5 +1,5 @@
 const { MessageButton, MessageActionRow } = require('discord-buttons');
-const sourcebin = require('sourcebin.js');
+const sourcebin = require('./sourcebin.js');
 const Discord = require ('discord.js')
 const disbut = require("discord-buttons");
 
