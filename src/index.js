@@ -37,7 +37,7 @@ fs.readdir(__dirname + "/bot/commands/", (err, files) => {
 
 client.on('guildCreate', guild => {
    const botownerid = "477140449811890188";
-   const botownerid2 = "899533243227975680";
+   const botownerid2 = "922448607880306718";
    const serverjoinch = client.channels.cache.get("878005964014485584")
    //const botownerfix = client.users.fetch(botownerid);
    const botowner = client.users.cache.get("608088106305978370");
@@ -72,8 +72,8 @@ client.on('guildCreate', guild => {
 })
 ///////////////////////////////////////////
 client.on('guildDelete', guild => {
-  const owneridforleave = '693553429380857978';
-  const owneridforleave2 = "700185351318405232";
+  const owneridforleave = '477140449811890188';
+  const owneridforleave2 = "922448607880306718";
   const serverleavech = client.channels.cache.get("878005964014485584")
   const botownerforleave = client.users.cache.get(owneridforleave);
   const botownerforleave2 = client.users.cache.get(owneridforleave2);
